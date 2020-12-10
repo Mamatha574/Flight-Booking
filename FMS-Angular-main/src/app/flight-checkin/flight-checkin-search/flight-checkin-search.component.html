@@ -1,0 +1,31 @@
+<br>
+<br>
+<div class="alert alert-success" style="text-align: center ; font-weight: 700;" *ngIf='message'>{{message}} &nbsp; <a style="cursor:pointer; color: blue;" (click)="checkInConfirm()">CheckIn</a></div>
+<div class="alert alert-success" style="text-align: center ; font-weight: 700;" *ngIf='confirmationMessage'>{{confirmationMessage}}</div>
+<div class="card">
+    <div class="card-header">
+        <h3 style="text-align: center; ">Confirm Flight Booking</h3>
+    </div>
+
+    <div class="card-body">
+        <form #addCheckIn='ngForm' (ngSubmit)='checkIn(addCheckIn)'>
+            <!--------------User Name with pattern Validations---------------->
+            <div class="form-group">
+                <label for="bookingReference">Booking Reference</label>
+                <input class="input-field" type="number" name="bookingReference" id="bookingReference" #bookingReference='ngModel' ngModel class="form-control">
+                <div class="text-danger" *ngIf='bookingReference.touched && bookingReference.invalid'>
+                    <div *ngIf='bookingReference.errors.required'>
+                        *This field is mandatory
+                    </div>
+
+                </div>
+            </div>
+            <br><br>
+            <div class="text-center">
+                <!-- Sign in button -->
+                <button class="btn btn-info" type="submit" [disabled]="addCheckIn.invalid">Search</button>
+            </div>
+        </form>
+    </div>
+
+</div>

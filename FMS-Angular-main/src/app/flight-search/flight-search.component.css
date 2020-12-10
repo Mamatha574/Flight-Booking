@@ -1,0 +1,1273 @@
+/*! CSS Used from: http://localhost/flight/assets/css/style.css */
+
+.section {
+    position: relative;
+    height: 100vh;
+}
+
+.section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#booking {
+    font-family: 'Lato', sans-serif;
+    background-image: url('http://localhost/flight/assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #191a1e;
+}
+
+.booking-form {
+    position: relative;
+    background: #fff;
+    max-width: 642px;
+    width: 100%;
+    margin: auto;
+    padding: 45px 25px 25px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.booking-form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+    background-color: #fff;
+    height: 54px;
+    padding: 10px 13px;
+    color: #191a1e;
+    border: 1px solid #919191;
+    font-size: 16px;
+    font-weight: 700;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 3px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+    color: #dfe5e9;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+    color: #dfe5e9;
+}
+
+.booking-form .form-control::placeholder {
+    color: #dfe5e9;
+}
+
+.booking-form .form-control:focus {
+    background: #f9fafb;
+}
+
+.booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 6px;
+    bottom: 7px;
+    width: 32px;
+    line-height: 24px;
+    height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: #002bff;
+    font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+    content: '\279C';
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.booking-form .submit-btn {
+    color: #fff;
+    height: 65px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.booking-cta {
+    margin-top: 45px;
+}
+
+.booking-cta h1 {
+    font-size: 52px;
+    text-transform: uppercase;
+    color: #0942cb;
+    font-weight: 400;
+}
+
+.booking-cta p {
+    font-size: 22px;
+    color: #191a1e;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 600!important;
+}
+
+.pure-material-radio span {
+    font-size: 15px;
+}
+
+body {
+    margin: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/*! CSS Used from: https://gitcdn.xyz/repo/qaxim/cssfront/master/assets/css/style.css */
+
+
+/*! @import https://gitcdn.xyz/repo/qaxim/cssfront/master/assets/css/flexbox.css */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+@media only screen and (min-width:48em) {
+    .container {
+        width: 49rem;
+    }
+}
+
+@media only screen and (min-width:64em) {
+    .container {
+        width: 65rem;
+    }
+    .col-md-3,
+    .col-md-4,
+    .col-md-6,
+    .col-md-7,
+    .col-md-offset-1 {
+        box-sizing: border-box;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .col-md-3 {
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    .col-md-4 {
+        -ms-flex-preferred-size: 33.33333333%;
+        flex-basis: 33.33333333%;
+        max-width: 33.33333333%;
+    }
+    .col-md-6 {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .col-md-7 {
+        -ms-flex-preferred-size: 58.33333333%;
+        flex-basis: 58.33333333%;
+        max-width: 58.33333333%;
+    }
+    .col-md-offset-1 {
+        margin-left: 8.33333333%;
+    }
+}
+
+@media only screen and (min-width:75em) {
+    .container {
+        width: 76rem;
+    }
+}
+
+
+/*! end @import */
+
+
+/*! @import https://gitcdn.xyz/repo/qaxim/cssfront/master/assets/css/material/textfield_outlined.css */
+
+.pure-material-textfield-outlined {
+    --pure-material-safari-helper1: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+    position: relative;
+    display: inline-block;
+    padding-top: 6px;
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.pure-material-textfield-outlined>input {
+    box-sizing: border-box;
+    margin: 0;
+    border: solid 1px;
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    border-top-color: transparent;
+    border-radius: 4px;
+    padding: 15px 13px 15px;
+    width: 100%;
+    height: inherit;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+    background-color: transparent;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    caret-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.pure-material-textfield-outlined>input+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    width: 100%;
+    max-height: 100%;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    font-size: 75%;
+    line-height: 15px;
+    cursor: text;
+    transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+
+.pure-material-textfield-outlined>input+span::before,
+.pure-material-textfield-outlined>input+span::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    margin-top: 6px;
+    border-top: solid 1px;
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    min-width: 10px;
+    height: 8px;
+    pointer-events: none;
+    box-shadow: inset 0 1px transparent;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pure-material-textfield-outlined>input+span::before {
+    margin-right: 4px;
+    border-left: solid 1px transparent;
+    border-radius: 4px 0;
+}
+
+.pure-material-textfield-outlined>input+span::after {
+    flex-grow: 1;
+    margin-left: 4px;
+    border-right: solid 1px transparent;
+    border-radius: 0 4px;
+}
+
+.pure-material-textfield-outlined:hover>input {
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+    border-top-color: transparent;
+}
+
+.pure-material-textfield-outlined:hover>input+span::before,
+.pure-material-textfield-outlined:hover>input+span::after {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+}
+
+.pure-material-textfield-outlined>input:focus {
+    border-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+    border-top-color: transparent;
+    box-shadow: inset 1px 0 var(--pure-material-safari-helper1), inset -1px 0 var(--pure-material-safari-helper1), inset 0 -1px var(--pure-material-safari-helper1);
+    outline: none;
+}
+
+.pure-material-textfield-outlined>input:focus+span {
+    color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+}
+
+.pure-material-textfield-outlined>input:focus+span::before,
+.pure-material-textfield-outlined>input:focus+span::after {
+    border-top-color: var(--pure-material-safari-helper1)!important;
+    box-shadow: inset 0 1px var(--pure-material-safari-helper1);
+}
+
+.pure-material-textfield-outlined>input:disabled,
+.pure-material-textfield-outlined>input:disabled+span {
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38)!important;
+    border-top-color: transparent!important;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    pointer-events: none;
+}
+
+.pure-material-textfield-outlined>input:disabled+span::before,
+.pure-material-textfield-outlined>input:disabled+span::after {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38)!important;
+}
+
+
+/*! end @import */
+
+
+/*! @import https://gitcdn.xyz/repo/qaxim/cssfront/master/assets/css/material/button.css */
+
+.pure-material-button-contained {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.pure-material-button-contained::-moz-focus-inner {
+    border: none;
+}
+
+.pure-material-button-contained::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.pure-material-button-contained::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 1s, transform 0.5s;
+}
+
+.pure-material-button-contained:hover,
+.pure-material-button-contained:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:hover::before {
+    opacity: 0.08;
+}
+
+.pure-material-button-contained:focus::before {
+    opacity: 0.24;
+}
+
+.pure-material-button-contained:hover:focus::before {
+    opacity: 0.3;
+}
+
+.pure-material-button-contained:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:active::after {
+    opacity: 0.32;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+}
+
+.pure-material-button-contained:disabled {
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+    box-shadow: none;
+    cursor: initial;
+}
+
+.pure-material-button-contained:disabled::before {
+    opacity: 0;
+}
+
+.pure-material-button-contained:disabled::after {
+    opacity: 0;
+}
+
+
+/*! end @import */
+
+
+/*! @import https://gitcdn.xyz/repo/qaxim/cssfront/master/assets/css/material/radio.css */
+
+.pure-material-radio {
+    z-index: 0;
+    position: relative;
+    display: inline-block;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.pure-material-radio>input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    left: -10px;
+    top: -8px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+.pure-material-radio>span {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.pure-material-radio>span::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 2px 10px 2px 0;
+    border: solid 2px;
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    transition: border-color 0.2s;
+}
+
+.pure-material-radio>span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+    transform: translate(5px, 5px) scale(0);
+    transition: transform 0.2s;
+}
+
+.pure-material-radio>input:checked {
+    background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+}
+
+.pure-material-radio>input:checked+span::before {
+    border-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+}
+
+.pure-material-radio>input:checked+span::after {
+    transform: translate(5px, 5px) scale(1);
+}
+
+.pure-material-radio:hover>input {
+    opacity: 0.04;
+}
+
+.pure-material-radio>input:focus {
+    opacity: 0.12;
+}
+
+.pure-material-radio:hover>input:focus {
+    opacity: 0.16;
+}
+
+.pure-material-radio>input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+}
+
+.pure-material-radio>input:active+span::before {
+    border-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+}
+
+.pure-material-radio>input:disabled {
+    opacity: 0;
+}
+
+.pure-material-radio>input:disabled+span {
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    cursor: initial;
+}
+
+.pure-material-radio>input:disabled+span::before {
+    border-color: currentColor;
+}
+
+.pure-material-radio>input:disabled+span::after {
+    background-color: currentColor;
+}
+
+
+/*! end @import */
+
+
+/*! @import https://gitcdn.xyz/repo/qaxim/cssfront/master/assets/css/material/sidebar.css */
+
+label>span {
+    font-size: 22px;
+    float: right;
+    transition: -webkit-transform .25s ease;
+    transition: transform .25s ease;
+    transition: transform .25s ease, -webkit-transform .25s ease;
+}
+
+
+/*! end @import */
+
+::selection {
+    color: #ff2d54;
+    background: #dfeaf7;
+}
+
+::-moz-selection {
+    color: #ff2d54;
+    background: #dfeaf7;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    text-decoration: none!important;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    margin: 0px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    background: rgb(250, 250, 250);
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul,
+li,
+p,
+h1,
+input,
+button,
+select {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+label {
+    width: 100%;
+}
+
+@media (max-width:720px) {
+    .row {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-size: 16px;
+    color: rgb(var(--pure-material-onsurface-rgb));
+    background-color: rgb(var(--pure-material-surface-rgb));
+}
+
+.title {
+    padding-left: 40px;
+    color: inherit;
+    font-size: 18px;
+}
+
+
+/*! CSS Used from: http://localhost/flight/assets/css/bootstrap.min.css */
+
+body {
+    margin: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    margin: .67em 0;
+    font-size: 2em;
+}
+
+img {
+    border: 0;
+}
+
+hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+button,
+input,
+select {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@media print {
+    *,
+     :after,
+     :before {
+        color: #000!important;
+        text-shadow: none!important;
+        background: 0 0!important;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100%!important;
+    }
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+img {
+    vertical-align: middle;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+h1 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-3,
+.col-md-4,
+.col-md-6,
+.col-md-7 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width:992px) {
+    .col-md-3,
+    .col-md-4,
+    .col-md-6,
+    .col-md-7 {
+        float: left;
+    }
+    .col-md-7 {
+        width: 58.33333333%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-offset-1 {
+        margin-left: 8.33333333%;
+    }
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+
+input[type=radio]:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #999;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #999;
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.container:after,
+.container:before,
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
+}
+
+.container:after,
+.row:after {
+    clear: both;
+}
+
+
+/*! CSS Used from: http://localhost/flight/assets/css/normalize.css */
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+img {
+    border: 0;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+/*! CSS Used from: http://localhost/flight/assets/css/selectize.css */
+
+.selectize-control.repositories .selectize-dropdown>div {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.selectize-control.repositories .selectize-dropdown .name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.selectize-control.repositories .selectize-dropdown .title {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.selectize-control.repositories .selectize-dropdown .description {
+    font-size: 12px;
+    display: block;
+    color: #a0a0a0;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.selectize-control.repositories .selectize-dropdown .meta {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.selectize-control.repositories .selectize-dropdown .meta li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-right: 10px;
+}
+
+.selectize-control.repositories .selectize-dropdown .meta li span {
+    font-weight: bold;
+}
+
+.selectize-control.repositories::before {
+    -moz-transition: opacity .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    content: ' ';
+    z-index: 2;
+    position: absolute;
+    display: block;
+    top: 17px;
+    right: 34px;
+    width: 16px;
+    height: 16px;
+    background: url(http://localhost/flight/assets/img/spinner.gif);
+    background-size: 16px 16px;
+    opacity: 0;
+}
+
+.selectize-control.repositories.loading::before {
+    opacity: .4;
+}
+
+i.flag:not(.icon) {
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+    line-height: 11px;
+    vertical-align: baseline;
+    margin: 0 .5em 0 0;
+    text-decoration: inherit;
+    speak: none;
+    font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+i.flag:not(.icon):before {
+    display: inline-block;
+    content: '';
+    background: url(http://localhost/flight/assets/img/flags.png) no-repeat -108px -1976px;
+    width: 16px;
+    height: 11px;
+}
+
+i.flag.ae:before {
+    background-position: 0 -26px;
+}
+
+i.flag.bd:before {
+    background-position: 0 -468px;
+}
+
+i.flag.br:before {
+    background-position: 0 -728px;
+}
+
+i.flag.ca:before {
+    background-position: 0 -910px;
+}
+
+i.flag.de:before {
+    background-position: 0 -1430px;
+}
+
+i.flag.pk:before {
+    background-position: -72px -546px;
+}
+
+i.flag.se:before {
+    background-position: -72px -1066px;
+}
+
+i.flag.us:before {
+    background-position: -72px -1950px;
+}
+
+
+/*! CSS Used from: http://localhost/flight/assets/css/selectize.default.css */
+
+.selectize-control {
+    position: relative;
+}
+
+.selectize-dropdown,
+.selectize-input,
+.selectize-input input {
+    color: #303030;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    -webkit-font-smoothing: inherit;
+}
+
+.selectize-input {
+    background: #fff;
+    cursor: text;
+    display: inline-block;
+}
+
+.selectize-input {
+    border: 1px solid #d0d0d0;
+    padding: 10px 14px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 0px;
+    height: 50px;
+    line-height: 30px;
+}
+
+.selectize-input.full {
+    background-color: #fff;
+}
+
+.selectize-input>* {
+    vertical-align: baseline;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.selectize-input>input {
+    display: inline-block!important;
+    padding: 0!important;
+    min-height: 0!important;
+    max-height: none!important;
+    max-width: 100%!important;
+    margin: 0 1px!important;
+    text-indent: 0!important;
+    border: 0 none!important;
+    background: none!important;
+    line-height: inherit!important;
+    -webkit-user-select: auto!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.selectize-input>input::-ms-clear {
+    display: none;
+}
+
+.selectize-input>input:focus {
+    outline: none!important;
+}
+
+.selectize-input::after {
+    content: ' ';
+    display: block;
+    clear: left;
+}
+
+.selectize-dropdown {
+    position: absolute;
+    z-index: 10;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    margin: -1px 0 0 0;
+    border-top: 0 none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+.selectize-dropdown [data-selectable] {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.selectize-dropdown .active {
+    background-color: #f5fafd;
+    color: #495c68;
+}
+
+.selectize-dropdown-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.selectize-control.single .selectize-input,
+.selectize-control.single .selectize-input input {
+    cursor: pointer;
+}
+
+.selectize-control.single .selectize-input:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #808080 transparent transparent transparent;
+}
+
+.selectize-control.single .selectize-input {
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    background-color: #f9f9f9;
+    background-image: -moz-linear-gradient(top, #fefefe, #f2f2f2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fefefe), to(#f2f2f2));
+    background-image: -webkit-linear-gradient(top, #fefefe, #f2f2f2);
+    background-image: -o-linear-gradient(top, #fefefe, #f2f2f2);
+    background-image: linear-gradient(to bottom, #fefefe, #f2f2f2);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fffefefe', endColorstr='#fff2f2f2', GradientType=0);
+}
+
+.selectize-control.single .selectize-input,
+.selectize-dropdown.single {
+    border-color: #b8b8b8;
+}

@@ -1,0 +1,43 @@
+<div class="flightResults">
+
+    <div class="flightResult vcenter" *ngFor="let flight of flights;let i = index">
+        <div class="flightNo infoDiv">
+            <div class="label">
+                FLIGHT
+            </div>
+            <div class="value">
+                {{flight.flightName}}
+            </div>
+        </div>
+        <div class="flightDisplay vcenter">
+            <div class="location infoDiv">
+                <div class="label">SOURCE</div>
+                <div class="value">{{flight.source}}</div>
+            </div>
+            <div class="timeline">
+                <div class="symbol center"><img src="https://clipartion.com/wp-content/uploads/2015/11/airplane-clip-art-transportation-cleanclipart.jpg" alt="airplane.png" border="0" /></div>
+                <div class="duration center">2h 30m</div>
+            </div>
+            <div class="location infoDiv">
+                <div class="label">DESTINATION</div>
+                <div class="value">{{flight.destination}}</div>
+            </div>
+        </div>
+        <div class="flightInfo infoDiv">
+            <div class="label">FLIGHT TIME</div>
+            <div class="value">5:30</div>
+            <div class="value">{{flight.date}}</div>
+
+        </div>
+
+        <div class="flightFare infoDiv">
+            <div class="label">FLIGHT FARE</div>
+            <div class="value">Rs. {{flight.fare}}</div>
+        </div>
+
+        <div class="flightFare infoDiv">
+            <button class="btn btn-light" (click)="booking(i)">Book Now</button>
+        </div>
+
+    </div>
+</div>

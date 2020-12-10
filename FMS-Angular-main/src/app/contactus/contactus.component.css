@@ -1,0 +1,10 @@
+.contact-image {
+    height:170px;
+    width:100%;
+    background-size:cover;
+  }
+  p{
+      font-weight: 700;
+      font-style: italic;
+      font-size: 18px;
+  }

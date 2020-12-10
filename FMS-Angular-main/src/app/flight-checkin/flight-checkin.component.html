@@ -1,0 +1,29 @@
+<div class="container mt-4">
+
+    <br>
+    <table class="table table-hover table-bordered ">
+        <thead class="thead-dark">
+            <tr>
+                <th>CHECK-IN ID</th>
+                <th>BOOKING ID</th>
+                <th>SEAT NUMBER</th>
+                <th>CHECK IN DATE</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let checkIn of checkInList">
+                <td>{{checkIn.cId}}</td>
+                <td>{{checkIn.bId}}</td>
+                <td>{{checkIn.seatNumber}}</td>
+                <td>{{checkIn.checkInTime}}</td>
+
+
+
+                <!-- <td><button class="btn btn-outline-success" type="button">
+                        <i class="fas fa-check"></i> CheckIn</button></td> -->
+            </tr>
+        </tbody>
+    </table>
+
+</div>

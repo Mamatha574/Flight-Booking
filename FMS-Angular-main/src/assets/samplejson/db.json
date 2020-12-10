@@ -1,0 +1,8 @@
+{
+    "flightId": 3,
+    "flightName": "Indigo",
+    "source": "Hyderabad",
+    "destination": "Mumbai",
+    "date":  "2019-02-10",
+    "fare": 25000
+  }

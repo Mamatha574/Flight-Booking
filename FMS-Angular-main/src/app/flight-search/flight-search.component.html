@@ -1,0 +1,121 @@
+<body class="js-focus-visible">
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="booking-cta">
+                            <h1><strong>Book your flight</strong></h1>
+                            <p>Find the best prices and book your next ticket today!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-md-offset-1">
+                        <div class="booking-form">
+                            <form>
+                                <div class="form-group">
+                                    <div class="form-checkbox">
+                                        <div class="radios">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label class="pure-material-radio">
+                                    <input type="radio" name="group-enabled" checked="">
+                                    <span>One way</span>
+                                    </label>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="pure-material-radio">
+                                    <input type="radio" name="group-enabled">
+                                    <span>Roundtrip</span>
+                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="select-repo-selectized"> Flying from </label>
+                                            <select class="form-control" [(ngModel)]="source" name="source">
+												<option>BLR</option>
+												<option>MUM</option>
+												<option>BBS</option>
+											</select>
+                                            <span class="select-arrow"></span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="select-repo-selectized"> Flying to </label>
+                                            <select class="form-control" [(ngModel)]="destination" name="description">
+                                                <option>MUM</option>
+												<option>BLR</option>
+												<option>BBS</option>
+											</select>
+                                            <span class="select-arrow"></span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="pure-material-textfield-outlined">
+                                        <input placeholder=""  class="" type="date" [(ngModel)] = "date" name="date"> 
+                                        <span>Departing</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="pure-material-textfield-outlined">
+                                        <input placeholder=""  class="" type="date">
+                                        <span>Returning</span>
+                                        </label>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Adults (18+)</span>
+                                            <select class="form-control">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+											</select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Travel class</span>
+                                            <select class="form-control">
+												<option>Economy class</option>
+												<option>Business class</option>
+												<option>First class</option>
+											</select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-btn">
+                                    <button class="pure-material-button-contained submit-btn" (click)="redirectToFlightSearchResults()">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <span style="position: absolute; top: -99999px; left: -99999px; width: auto; padding: 0px; white-space: pre; letter-spacing: 0px; font-size: 14px; font-family: Lato, sans-serif; font-weight: 400; text-transform: none;">Arrival.....</span></body>
